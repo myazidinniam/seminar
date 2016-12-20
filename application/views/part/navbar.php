@@ -2,6 +2,7 @@
 <script  type="text/javascript" src="<?php print base_url('assets/js/jquery-1.9.1.js') ?>"></script>
 <nav class="navbar navbar-default navbar-fixed-top" style="box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);">
     <div class="container">
+    
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -9,16 +10,20 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="<?php echo base_url(); ?>">SI Seminar Unwaha</a>
+            </button><a href="<?php echo base_url(); ?>">
+            <img src="<?php echo base_url(); ?>assets/img/UN Fest.png" class="img-responsive" style="max-width: 100%;
+                 max-height: 60px;
+                 padding-top: 5px;
+                 }" >
+            </a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="<?php echo base_url(); ?>seminar">Cari Seminar</a></li>
-                <li><a class="btn" data-toggle="modal" data-target=".bs-example-modal-lg">Daftar</a></li>
-                <li><a class="btn" data-toggle="modal" data-target=".bs-example-modal-sm">Masuk</a></li>
+                <li><a href="<?php echo base_url(); ?>seminar"><i class="fa fa-search"></i> Cari Seminar</a></li>
+                <li><a class="btn" data-toggle="modal" data-target=".bs-example-modal-lg"><i class="fa fa-user-plus"></i>  Daftar</a></li>
+                <li><a class="btn" data-toggle="modal" data-target=".bs-example-modal-sm"><i class="fa fa-sign-in"></i>  Masuk</a></li>
                 <li><a href="#">Buat Seminar</a></li>
             </ul>
         </div>
